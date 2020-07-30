@@ -14,7 +14,7 @@ WORKDIR /home/${NB_USER}
 
 ## Copy files into the Docker image
 # Copy Rprofile to /home/rstudio/.Rprofile
-COPY --chown=${NB_USER}:${NB_USER} Rprofile ${WORKDIR}/.Rprofile
+COPY Rprofile ${WORKDIR}/.Rprofile
 
 # Clone project
 RUN git clone https://gitlab.com/linogaliana/documentationr.git ${WORKDIR}/documentationR
