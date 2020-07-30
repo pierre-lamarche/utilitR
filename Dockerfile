@@ -18,3 +18,4 @@ WORKDIR /home/${NB_USER}
 ## Copy files into the Docker image
 # Copy Rprofile to /home/rstudio/.Rprofile
 COPY Rprofile ${WORKDIR}/.Rprofile
+
