@@ -6,7 +6,7 @@ RUN /rocker_scripts/install_python.sh
 ENV PYTHON_VENV_PATH=/usr
 RUN /rocker_scripts/install_binder.sh
 
-ENV NB_USER=${NB_USER:-rstudio}
+ENV NB_USER=${NB_USER:-jovyan}
 ENV WORKDIR=${WORKDIR:-/home/${NB_USER}}
 ## Copy files into the Docker image
 # Copy Rprofile to /home/rstudio/.Rprofile
